@@ -918,63 +918,6 @@ async def faces(owo):
     await owo.edit(reply_text)
 
 
-@register(outgoing=True, pattern="^.react$")
-async def react_meme(react):
-    """ Make your userbot react to everything. """
-    await react.edit(choice(FACEREACTS))
-
-
-@register(outgoing=True, pattern="^.shg$")
-async def shrugger(shg):
-    r""" ¯\_(ツ)_/¯ """
-    await shg.edit(choice(SHGS))
-
-
-@register(outgoing=True, pattern="^.chase$")
-async def police(chase):
-    """ Run boi run, i'm gonna catch you !! """
-    await chase.edit(choice(CHASE_STR))
-
-
-@register(outgoing=True, pattern="^.run$")
-async def runner_lol(run):
-    """ Run, run, RUNNN! """
-    await run.edit(choice(RUNS_STR))
-
-
-@register(outgoing=True, pattern="^.metoo$")
-async def metoo(hahayes):
-    """ Haha yes """
-    await hahayes.edit(choice(METOOSTR))
-
-
-@register(outgoing=True, pattern="^.Oof$")
-async def Oof(e):
-    t = "Oof"
-    for j in range(16):
-        t = t[:-1] + "of"
-        await e.edit(t)
-
-
-@register(outgoing=True, pattern="^.oem$")
-async def Oem(e):
-    t = "Oem"
-    for j in range(16):
-        t = t[:-1] + "em"
-        await e.edit(t)
-
-
-@register(outgoing=True, pattern="^.Oem$")
-async def Oem(e):
-    t = "Oem"
-    for j in range(16):
-        t = t[:-1] + "em"
-        await e.edit(t)
-
-
-@register(outgoing=True, pattern="^.10iq$")
-async def iqless(e):
-    await e.edit("♿")
 
 
 @register(outgoing=True, pattern="^.moon$")
@@ -1147,7 +1090,6 @@ CMD_HELP.update({
 \nUsage: Check yourself ;)\
 \n\n-_-\
 \nUsage: Ok...\
-\n\n;_;\
 \nUsage: Like `-_-` but crying.\
 \n\n.cp\
 \nUsage: Copypasta the famous meme\
